@@ -20,7 +20,7 @@ app.use('/api/books', require('./routes/books'));
 
 // Arrancamos el servidor
 app.listen(PORT, function () {
-    console.log(`La app ha arranado en http://localhost:${PORT}`);
+    console.log(`La app ha arranado en el port ${PORT}`);
 
     // Conectase a la base de datos
     // Force true: DROP TABLES
