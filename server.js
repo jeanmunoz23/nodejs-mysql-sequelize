@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const sequelize = require('../database/db');
+const sequelize = require('./database/db');
 
 // Setting
 const PORT = process.env.PORT || 3000;
@@ -15,8 +15,8 @@ app.get('/', function (req, res) {
     res.json("Hola Mundo");
 });
 
-app.use('/api/posts', require('../routes/posts'));
-app.use('/api/books', require('../routes/books'));
+app.use('/api/posts', require('./routes/posts'));
+app.use('/api/books', require('./routes/books'));
 
 // Arrancamos el servidor
 app.listen(PORT, function () {
