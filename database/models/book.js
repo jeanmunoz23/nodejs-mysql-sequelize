@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../db');
-class Book extends Model {}
-Book = sequelize.define("Book", {
+class book extends Model {}
+book = sequelize.define("Book", {
    title: {
      type: DataTypes.STRING,
      allowNull: false
@@ -18,4 +18,4 @@ Book = sequelize.define("Book", {
    }
 });
 
-module.exports = Book;
+module.exports = book;
