@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Post = require('../database/models/Post');
+const Post = require('../database/models/post.js');
 
 // INDEX /api/posts
 router.get('/', (req, res) => {
