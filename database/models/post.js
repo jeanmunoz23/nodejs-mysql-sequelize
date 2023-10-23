@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../db');
 
-class post extends Model {}
+class Post extends Model {}
  Post = sequelize.define("Post",{
     title: DataTypes.STRING,
     body: DataTypes.TEXT
@@ -10,4 +10,4 @@ class post extends Model {}
     modelName: "post"
 });
 
-module.exports = post;
+module.exports = Post;
