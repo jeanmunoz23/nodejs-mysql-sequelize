@@ -31,10 +31,9 @@ Book = sequelize.define("Book", {
     // Options
     timestamps: true,
     underscrored: true,
-    // createdAt: "created_at",
-    // updatedAt: "updated_at"
-  }
-);
+    sequelize,
+    modelName: "post"
+});
 
 
 module.exports = Book;

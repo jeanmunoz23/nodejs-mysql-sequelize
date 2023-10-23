@@ -13,7 +13,8 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     Book.create({
         title: req.body.title,
-        body: req.body.body
+        author: req.body.author,
+        published: req.body.published
     }).then(result => {
         res.json(result);
     })
@@ -30,7 +31,8 @@ router.get('/:id', (req, res) => {
 router.patch('/:id', (req, res) => {
     Book.update({
         title: req.body.title,
-        body: req.body.body
+        author: req.body.author,
+        published: req.body.published
     }, {
         where: {
             id: req.params.id
